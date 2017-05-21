@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1" />
-	<link rel="stylesheet" href="prova1.css" />
+	<link rel="stylesheet" href="prova.css" />
 	<title>Nuovo Prodotto</title>
 </head>
 <body>
