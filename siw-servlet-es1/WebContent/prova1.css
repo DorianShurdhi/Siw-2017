@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-image: url(r3.jpg); 
+    background-size: 250px 180px;
+    background-repeat: no-repeat;
+	text-align: center;
+}
+h1 {
+	font-family: inherit;
+}
+h2 {
+	font-family: inherit;
+}
+td {
+	margin-bottom: 20px;
+	font-size: 20;
+}
+form {	
+	font-family: inherit;	
+}
+
+input {
+	font-family: inherit;
+	font-size: 25;
+	background-color: white;
+	color: black;
+	padding: 20;
+	border: 20;
+	margin: 20
+}
