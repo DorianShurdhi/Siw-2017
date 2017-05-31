@@ -1,6 +1,7 @@
 @CHARSET "ISO-8859-1";
 body {
 	background-image:url("juv1.jpg");
+	
   
 }
 h1 {
@@ -8,18 +9,19 @@ h1 {
 }
 div {
 	font-family: inherit;
-	text-decoration: red;
+	text-decoration: white;
 }
 
 form {	
 	font-family: inherit;	
+	text-decoration: white;
 }
 
 input {
 	font-family: inherit;
 	font-size: 25;
 	background-color: white;
-	color: black;
+	color: white;
 	padding: 20;
 	border: 20;
 	margin: 20

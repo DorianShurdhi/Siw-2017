@@ -1,18 +1,50 @@
 @CHARSET "ISO-8859-1";
+
 body {
 	background-image: url();
+	font-family: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px; /*ho inserito una misura a caso*/
+	height: 300px; /*ho inserito una misura a caso*/
+	margin-left: -250px; /*metà della width*/
+	margin-top: -150px; /*metà della height*/
+	display: none;
+	z-index: 2
 }
+
 h1 {
 	font-family: inherit;
 }
+
 div {
 	font-family: inherit;
 	text-decoration: red;
+	font-family: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px; /*ho inserito una misura a caso*/
+	height: 300px; /*ho inserito una misura a caso*/
+	margin-left: -250px; /*metà della width*/
+	margin-top: -150px; /*metà della height*/
+	display: none;
+	z-index: 2
 }
 
 }
-form {	
-	font-family: inherit;	
+form {
+	font-family: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px; /*ho inserito una misura a caso*/
+	height: 300px; /*ho inserito una misura a caso*/
+	margin-left: -250px; /*metà della width*/
+	margin-top: -150px; /*metà della height*/
+	display: none;
+	z-index: 2
 }
 
 input {
