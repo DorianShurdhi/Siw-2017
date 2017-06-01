@@ -42,7 +42,7 @@ public class ProductCrudRepositoryJPA implements ProductCrudRepository {
 	}
 	@Override
 	public void deleteAll() {
-		Query query=em.createQuery("DELETE FROM Artista");
+		Query query=em.createQuery("DELETE FROM Product");
 		query.executeUpdate();
 		
 	}

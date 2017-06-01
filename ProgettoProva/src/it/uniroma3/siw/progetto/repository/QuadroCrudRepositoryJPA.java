@@ -31,7 +31,7 @@ public class QuadroCrudRepositoryJPA implements QuadroCrudRepository {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Quadro> findAll() {
-		Query query= em.createQuery("SELECT a FROM 	Quadro a");
+		Query query= em.createQuery("SELECT q FROM 	Quadro q");
 		return query.getResultList();
 	}
 
