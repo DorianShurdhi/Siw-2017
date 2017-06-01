@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-image: url(home.jpg); 
+	background-size: 100%;
+    background-repeat: no-repeat;
+	margin-top: 20;
+	font-family: Courier New, monospace;
+	text-align: center;
+}
+h1 {
+	font-family: inherit;
+}
+h2 {
+	font-family: inherit;
+}
+td {
+	margin-bottom: 20px;
+	font-size: 20;
+}
+form {	
+	font-family: inherit;	
+}
+
+input {
+	font-family: inherit;
+	font-size: 25;
+	background-color: white;
+	color: black;
+	padding: 20;
+	border: 20;
+	margin: 20
+}
