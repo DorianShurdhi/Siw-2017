@@ -56,7 +56,7 @@ public class ControllerQuadro extends HttpServlet{
 		String nextPage;
 		QuadroService service = new QuadroService();
 
-		if(request.getParameter("id")!=null){ //se nella richiesto ho l'id faccio questo
+		if(request.getParameter("id")!=null){                        //se nella richiesto ho l'id faccio questo
 			Long id= Long.parseLong(request.getParameter("id"));
 			Quadro one = service.getOneQuadro(id);
 			request.setAttribute("quadro", one);

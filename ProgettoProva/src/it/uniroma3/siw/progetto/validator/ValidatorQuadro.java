@@ -53,10 +53,10 @@ public class ValidatorQuadro {
 		}
 		else {
 			try {
-				DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+				DateFormat df = new SimpleDateFormat("yyyy");
 				quadro.setAnnoRealizzazione(df.parse(annoRealizzazione));
-				if(df.parse(annoRealizzazione).compareTo(new Date()) < 0) {
-					request.setAttribute("errAnnoRealizzazione", "Deve essere successiva alla data di oggi!");
+				if(df.parse(annoRealizzazione).compareTo(new Date()) > 0) {
+					request.setAttribute("errAnnoRealizzazione", "Deve essere precedente alla data di oggi!");
 					tuttoOk = false;
 				}
 			} catch (ParseException e) {
