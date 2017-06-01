@@ -17,7 +17,7 @@ public class ValidatorQuadro {
 		String annoRealizzazione = request.getParameter("annoRealizzazione");
 		String prezzo = request.getParameter("prezzo");
 		
-		Quadro quadro=(Quadro) request.getAttribute("prodotto");
+		Quadro quadro=(Quadro) request.getAttribute("quadro");
 		
 		if(titolo == null || titolo.equals("")) {
 			request.setAttribute("errTitolo", "Campo obbligatorio");
