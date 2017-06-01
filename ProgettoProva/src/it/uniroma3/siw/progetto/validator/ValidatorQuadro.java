@@ -39,7 +39,7 @@ public class ValidatorQuadro {
 		}
 		else {
 			try {
-				quadro.setPrezzo(Float.parseFloat(prezzo));
+				quadro.setPrezzo(Integer.parseInt(prezzo));
 			}
 			catch (NumberFormatException e) {
 				request.setAttribute("errPrezzo", "Deve essere un numero!");
