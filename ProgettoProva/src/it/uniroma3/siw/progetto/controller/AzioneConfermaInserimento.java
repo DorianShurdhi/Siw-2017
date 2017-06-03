@@ -26,9 +26,9 @@ public class AzioneConfermaInserimento {
 		//f.inserisciQuadro(q.getTitolo(), q.getCodice(), q.getPrezzo());
 	
 		// WORKAROUND
-		String titolo = request.getParameter("titoloQ");
-		String descrizione = request.getParameter("codiceQ");
-		int prezzo = Integer.parseInt(request.getParameter("prezzoQ"));
+		String titolo = request.getParameter("titolo");
+		String descrizione = request.getParameter("codice");
+		int prezzo = Integer.parseInt(request.getParameter("prezzo"));
 		
 	
 		

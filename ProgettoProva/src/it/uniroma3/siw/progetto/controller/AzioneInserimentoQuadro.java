@@ -18,9 +18,9 @@ public class AzioneInserimentoQuadro {
 		HelperInserimentoQuadro h = new HelperInserimentoQuadro(request);
 		if(h.convalida()){
 			HttpSession s = this.request.getSession();
-			String titolo = request.getParameter("titolosT");
-			String codice = request.getParameter("codiceT");
-			String prezzoS = request.getParameter("prezzoT");
+			String titolo = request.getParameter("titolos");
+			String codice = request.getParameter("codice");
+			String prezzoS = request.getParameter("prezzo");
 			int prezzo = Integer.parseInt(prezzoS);
 			Quadro q = new Quadro();
 			s.setAttribute("quadro", q);

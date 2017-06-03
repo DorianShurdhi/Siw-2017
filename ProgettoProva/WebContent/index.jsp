@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
-    	<header>Welcome To The Museum</header>
+    	<h1>Welcome To The Museum</h1>
     	<h2>Please login</h2>
   </body>
 </html>

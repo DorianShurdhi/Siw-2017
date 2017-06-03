@@ -10,8 +10,8 @@
 <form method="POST" action="admin/controllerLogin.do" >
 <p>Per effettuare il login come admin utilizzate Mario come username e rossi come password</p>
 <p>Tutti gli altri username e password saranno considerati utenti senza privilegi</p>
-	<p>Username: <input type="text" value="" name="usernameT"/></p>
-	<p>Password: <input type="password" value="" name="passwordT"/></p>
+	<p>Username: <input type="text" value="" name="username"/></p>
+	<p>Password: <input type="password" value="" name="password"/></p>
 	<p><input type="submit" value="Login" name="bottoneLogin"/>
 </form> 
 </body>

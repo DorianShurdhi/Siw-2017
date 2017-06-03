@@ -7,7 +7,7 @@
 <title>Visualizzazione quadri</title>
 </head>
 <body>
-<h1>Prodotti</h1>
+<h1>Quadri</h1>
 	<% FacadeQuadro f = new FacadeQuadro();
 	ArrayList<Quadro> lista = f.tuttiQuadri(); 
 	Iterator<Quadro> i = lista.iterator();
