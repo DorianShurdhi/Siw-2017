@@ -18,8 +18,8 @@ public class AzioneLogin {
 		sessione.setMaxInactiveInterval(2*60*60);
 		String risultato = "Fail";
 		FacadeLogin f = new FacadeLogin();
-		String username = this.request.getParameter("usernameQ");
-		String password = this.request.getParameter("passwordQ");
+		String username = this.request.getParameter("username");
+		String password = this.request.getParameter("password");
 		Utente u = f.login(username, password);
 		if(u!= null){
 			sessione.setAttribute("utente", u);

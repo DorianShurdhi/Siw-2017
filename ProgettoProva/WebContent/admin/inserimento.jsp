@@ -18,13 +18,13 @@
 				<div>
 					Titolo*: <input type="text" name="titoloQ" value="${quadro.titolo}" />${errTitolo}</div>
 				<div>
-					Descrizione*: <input type="text" name="descrizioneQ"
+					Descrizione*: <input type="text" name="descrizione"
 						value="${quadro.descrizione}" />${errDescrizione}</div>
 				<div>
-					Prezzo*: <input type="text" name="prezzoQ"
+					Prezzo*: <input type="text" name="prezzo"
 						value="${quadro.prezzo}" />${errPrezzo}</div>
 				<div>
-					Anno Realizzazione*: <input type="text" name="annoRealizzazioneQ"
+					Anno Realizzazione*: <input type="text" name="annoRealizzazione"
 						value="${quadro.annoRealizzazione}" />${errAnnoRealizzazione}</div>
 				<div>* Campo Obbligatorio</div>
 				<input type="submit" name="command" value="invia" />

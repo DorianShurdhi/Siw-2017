@@ -22,8 +22,8 @@
 					</h2>
 					<form class="login-form" action="admin/controllerLogin.do" method="POST">
 						<input type="text" class="input" placeholder="Username" /> <input
-							type="password" class="input" placeholder="passwordT" /> <input
-							type="submit" class="input button" name="usernameT" value="Login">
+							type="password" class="input" placeholder="password" /> <input
+							type="submit" class="input button" name="username" value="Login">
 					</form>
 				</div>
 			</div>
