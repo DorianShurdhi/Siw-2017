@@ -11,7 +11,7 @@
 	<ul>
 		<c:forEach var="quadro" items="${quadro}">
 			<li><a href="quadro?id=${quadro.id}">${quadro.titolo}</a>
-				<form action="quadro" method="post">
+				<form action="quadro" method="POST">
 					<input type="hidden" value="${quadro.id }" name="id"/>
 					<input type="button" name="command" value="rimuovi" />
 				</form>

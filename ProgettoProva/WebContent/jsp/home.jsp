@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome</title>
-<link rel="stylesheet" href="prova.css">
+<link rel="stylesheet" href="css/quadro.css">
 </head>
 <body>
 	<section>
