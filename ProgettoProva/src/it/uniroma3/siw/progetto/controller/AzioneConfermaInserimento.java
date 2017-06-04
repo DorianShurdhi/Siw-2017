@@ -23,19 +23,14 @@ public class AzioneConfermaInserimento {
 		
 		//HttpSession s = this.request.getSession();
 		//Quadro q = (Quadro) s.getAttribute("quadro");
-		//f.inserisciQuadro(q.getTitolo(), q.getCodice(), q.getPrezzo());
+		//f.inserisciQuadro(s.getTitolo(), s.getDescrizione(), s.getPrezzo(), s.getAnnoRealizzazion());
 	
 		// WORKAROUND
 		String titolo = request.getParameter("titolo");
-		String descrizione = request.getParameter("codice");
+		String descrizione = request.getParameter("descrizione");
 		int prezzo = Integer.parseInt(request.getParameter("prezzo"));
-		
+		String annoRealizzazione = request.getParameter("annoRealizzazione");
 	
-		
-		String target = "Thu Sep 28 20:29:30 JST 2000";
-		DateFormat df = new SimpleDateFormat("E MM dd kk:mm:ss z yyyy");
-		Date annoRealizzazione =  df.parse(target); 
-		
 		Quadro q = f.inserisciQuadro(titolo, descrizione, prezzo,annoRealizzazione);
 		//
 		if(f.tuttiQuadri().contains(q)){

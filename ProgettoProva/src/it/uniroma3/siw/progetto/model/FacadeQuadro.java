@@ -10,7 +10,7 @@ public class FacadeQuadro {
 		this.quadri = new ArrayList<Quadro>();
 	}
 	
-	public Quadro inserisciQuadro(String titolo,String descrizione,int prezzo,Date annoRealizzazione){
+	public Quadro inserisciQuadro(String titolo,String descrizione,int prezzo,String annoRealizzazione){
 		Quadro q = new Quadro();
 		this.quadri.add(q);
 		return q;

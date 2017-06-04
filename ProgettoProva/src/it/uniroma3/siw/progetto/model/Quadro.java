@@ -15,17 +15,17 @@ public class Quadro {
 	private String titolo;	
 	private String descrizione;
 	private int prezzo;
-	private Date annoRealizzazione;
+	private String annoRealizzazione;
 
 	public String getTitolo() {
 		return titolo;
 	}
 
-	public Date getAnnoRealizzazione() {
+	public String getAnnoRealizzazione() {
 		return annoRealizzazione;
 	}
 
-	public void setAnnoRealizzazione(Date annoRealizzazione) {
+	public void setAnnoRealizzazione(String annoRealizzazione) {
 		this.annoRealizzazione = annoRealizzazione;
 	}
 
