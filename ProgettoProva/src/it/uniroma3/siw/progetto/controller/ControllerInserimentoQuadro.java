@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ControllerInserimentoProdotto
  */
-@WebServlet("/admin/inserimentoProdotto.do")
+@WebServlet("/admin/inserimentoQuadro.do")
 public class ControllerInserimentoQuadro extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

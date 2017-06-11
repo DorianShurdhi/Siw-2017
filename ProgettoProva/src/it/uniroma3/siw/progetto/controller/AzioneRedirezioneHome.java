@@ -30,7 +30,7 @@ public class AzioneRedirezioneHome extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ServletContext app = request.getServletContext();
-		RequestDispatcher r = app.getRequestDispatcher("/index.html");
+		RequestDispatcher r = app.getRequestDispatcher("/index.jsp");
 		r.forward(request, response);
 	}
 

@@ -54,7 +54,7 @@ public class ControllerLogin extends HttpServlet {
 			prossimaPagina = "/admin/inserimento.jsp";
 		}
 		if(risultato.equals("Success") && ruolo.equals("user")){
-			prossimaPagina = "/quadro.jsp";
+			prossimaPagina = "/errore.jsp";
 			s.removeAttribute("utente");
 		}
 		/* */

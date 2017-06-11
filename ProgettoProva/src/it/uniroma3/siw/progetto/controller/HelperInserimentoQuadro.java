@@ -12,8 +12,9 @@ public class HelperInserimentoQuadro {
 	public boolean convalida() {
 		boolean risultato = true;
 		String titolo = request.getParameter("titolo");
-		String codice = request.getParameter("codice");
+		String descrizione = request.getParameter("descrizione");
 		String prezzo = request.getParameter("prezzo");
+		String annoRealizzazione = request.getParameter("annorealizzazione");
 		
 		try{
 			int valore = Integer.parseInt(prezzo);
@@ -21,7 +22,8 @@ public class HelperInserimentoQuadro {
 			risultato = false;
 		}
 		if(titolo==null || titolo.equals("")) risultato = false;
-		if(codice==null || codice.equals("")) risultato = false;
+		if(descrizione==null || descrizione.equals("")) risultato = false;
+		if(annoRealizzazione==null || annoRealizzazione.equals("")) risultato = false;
 		return risultato;
 	}
 	

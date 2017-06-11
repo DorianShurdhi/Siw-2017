@@ -39,8 +39,8 @@ public class ControllerConfermaInserimento extends HttpServlet {
 		HttpSession sess = request.getSession();
 		Quadro q = (Quadro) sess.getAttribute("quadro");
 		*/
-		AzioneConfermaInserimento a = new AzioneConfermaInserimento(request);
-		String risultato = "";
+		AzioneInserimentoQuadro a = new AzioneInserimentoQuadro(request);
+		String risultato = a.esegui();
 		String prossimaPagina = "/admin/erroreInserimento.jsp";
 		if(risultato.equals("Success")){
 			prossimaPagina = "/admin/successoInserimento.jsp";
