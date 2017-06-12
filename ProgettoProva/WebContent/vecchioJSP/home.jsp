@@ -33,7 +33,7 @@
 
 			<div>
 				<h2 align="left">Vedi Galleria Quadri: </h2>
-				<a href="quadro">Lista Quadri</a>
+				<a href="quadri">Lista Quadri</a>
 			</div>
 			</div>
 		</article>

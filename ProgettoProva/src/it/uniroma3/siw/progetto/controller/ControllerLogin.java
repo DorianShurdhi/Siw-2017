@@ -57,6 +57,7 @@ public class ControllerLogin extends HttpServlet {
 			prossimaPagina = "/errore.jsp";
 			s.removeAttribute("utente");
 		}
+		
 		/* */
 		
 		ServletContext contesto = request.getServletContext();

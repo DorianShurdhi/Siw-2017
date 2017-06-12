@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="it.uniroma3.siw.progetto.model.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet"
@@ -21,7 +24,7 @@
 						<img src="img/key.png" />
 					</h2>
 					<form class="login-form" action="admin/controllerLogin.do" method="POST">
-						<input type="text" class="input" placeholder="Username" /> <input
+						<input type="text" class="input" placeholder="username" /> <input
 							type="password" class="input" placeholder="password" /> <input
 							type="submit" class="input button" name="username" value="Login">
 					</form>

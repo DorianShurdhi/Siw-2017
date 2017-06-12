@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-image: url(error.png); 
+	background-size: 70%;
+    background-repeat: no-repeat;
+	margin-top: 20;
+	font-family: Courier New, monospace;
+	text-align: left;
+}
