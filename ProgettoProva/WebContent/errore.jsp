@@ -10,6 +10,7 @@
 <body>
 
 	<h2>Errore di Autenticazione</h2>
+	<p>Username: ${utente.username}</p>
 	<p>Ruolo: ${utente.role}</p>
 	
 	<h3>Torna Indetro</h3>
