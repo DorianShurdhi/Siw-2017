@@ -4,15 +4,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Museo Delle Belle Arti</title>
-<link rel="stylesheet" href="quadri.css">
+<link rel="stylesheet" href="opere.css">
 </head>
 <body>
 	<h1>Museo delle Belle Arti:</h1>
 	<ul>
-		<c:forEach var="quadro" items="${quadro}">
-			<li><a href="quadro?id=${quadro.id}">${quadro.titolo}</a>
-				<form action="quadro" method="POST">
-					<input type="hidden" value="${quadro.id }" name="id"/>
+		<c:forEach var="opera" items="${opera}">
+			<li><a href="opera?id=${quadro.id}">${opera.titolo}</a>
+				<form action="opera" method="POST">
+					<input type="hidden" value="${opera.id }" name="id"/>
 					<input type="button" name="command" value="rimuovi" />
 				</form>
 			</li>

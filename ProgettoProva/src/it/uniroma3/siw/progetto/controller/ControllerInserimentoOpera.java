@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ControllerInserimentoProdotto
  */
-@WebServlet("/admin/inserimentoQuadro.do")
-public class ControllerInserimentoQuadro extends HttpServlet {
+@WebServlet("/admin/inserimentoOpera.do")
+public class ControllerInserimentoOpera extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ControllerInserimentoQuadro() {
+    public ControllerInserimentoOpera() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,7 +29,7 @@ public class ControllerInserimentoQuadro extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AzioneInserimentoQuadro azione = new AzioneInserimentoQuadro(request);
+		AzioneInserimentoOpera azione = new AzioneInserimentoOpera(request);
 		String risultato = azione.esegui();
 		String prossimaPagina = "/admin/inserimento.jsp";
 		if(risultato.equals("Success")){

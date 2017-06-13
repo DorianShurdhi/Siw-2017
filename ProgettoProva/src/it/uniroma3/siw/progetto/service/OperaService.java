@@ -8,54 +8,54 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
-import it.uniroma3.siw.progetto.model.Quadro;
-import it.uniroma3.siw.progetto.repository.QuadroCrudRepositoryJPA;
+import it.uniroma3.siw.progetto.model.Opera;
+import it.uniroma3.siw.progetto.repository.OperaCrudRepositoryJPA;
 
-public class QuadroService {
+public class OperaService {
 	
 
-	public QuadroService() {
+	public OperaService() {
 
 	}
-	public Quadro inserisciQuadro(Quadro quadro){
+	public Opera inserisciOpera(Opera opera){
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("progettoBase-unit");
 		EntityManager em = emf.createEntityManager();
-		QuadroCrudRepositoryJPA rep = new QuadroCrudRepositoryJPA(em);
+		OperaCrudRepositoryJPA rep = new OperaCrudRepositoryJPA(em);
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
-		quadro=rep.save(quadro);
+		opera=rep.save(opera);
 		tx.commit();
-		return quadro;
+		return opera;
 	}
-	public List<Quadro> getQuadri() {
+	public List<Opera> getOpere() {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("progettoBase-unit");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
-		QuadroCrudRepositoryJPA rep =new QuadroCrudRepositoryJPA(em);
+		OperaCrudRepositoryJPA rep =new OperaCrudRepositoryJPA(em);
 		tx.begin();
 
-		List<Quadro> quadri=rep.findAll();
+		List<Opera> opere=rep.findAll();
 		tx.commit();
 
-		return quadri;
+		return opere;
 	}
-	public Quadro getOneQuadro(Long id) {
+	public Opera getOneOpera(Long id) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("progettoBase-unit");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
-		QuadroCrudRepositoryJPA rep =new QuadroCrudRepositoryJPA(em);
+		OperaCrudRepositoryJPA rep =new OperaCrudRepositoryJPA(em);
 		tx.begin();
-		Quadro quadro = rep.findOne(id);
+		Opera opera = rep.findOne(id);
 		tx.commit();
-		return quadro;
+		return opera;
 	}
-	public void remove(Quadro quadro){
+	public void remove(Opera opera){
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("progettoBase-unit");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
-		QuadroCrudRepositoryJPA rep =new QuadroCrudRepositoryJPA(em);
+		OperaCrudRepositoryJPA rep =new OperaCrudRepositoryJPA(em);
 		tx.begin();
-		rep.delete(quadro);
+		rep.delete(opera);
 		tx.commit();	
 	}
 }

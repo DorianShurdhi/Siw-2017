@@ -2,10 +2,10 @@ package it.uniroma3.siw.progetto.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class HelperInserimentoQuadro {
+public class HelperInserimentoOpera {
 	private HttpServletRequest request;
 	
-	public HelperInserimentoQuadro(HttpServletRequest request) {
+	public HelperInserimentoOpera(HttpServletRequest request) {
 		this.request = request;
 	}
 
@@ -14,7 +14,7 @@ public class HelperInserimentoQuadro {
 		String titolo = request.getParameter("titolo");
 		String descrizione = request.getParameter("descrizione");
 		String prezzo = request.getParameter("prezzo");
-		String annoRealizzazione = request.getParameter("annorealizzazione");
+		String annoRealizzazione = request.getParameter("annoRealizzazione");
 		
 		try{
 			int valore = Integer.parseInt(prezzo);

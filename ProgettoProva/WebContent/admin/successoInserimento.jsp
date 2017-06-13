@@ -7,7 +7,7 @@
 <title>Successo</title>
 </head>
 <body>
-<h1>Prodotto inserito</h1>
-<a href="togliProdotto.do">Inserisci nuovo Quadro</a>
+<h1>Opera inserita</h1>
+<a href="togliOpera.do">Inserisci nuova Opera</a>
 </body>
 </html>

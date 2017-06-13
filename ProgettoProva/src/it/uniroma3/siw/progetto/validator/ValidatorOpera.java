@@ -7,9 +7,9 @@ import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 
-import it.uniroma3.siw.progetto.model.Quadro;
+import it.uniroma3.siw.progetto.model.Opera;
 
-public class ValidatorQuadro {
+public class ValidatorOpera {
 	public boolean validate(HttpServletRequest request){
 		boolean tuttoOk = true;
 		String titolo = request.getParameter("titolo");
@@ -17,21 +17,21 @@ public class ValidatorQuadro {
 		String annoRealizzazione = request.getParameter("annoRealizzazione");
 		String prezzo = request.getParameter("prezzo");
 		
-		Quadro quadro=(Quadro) request.getAttribute("quadro");
+		Opera opera=(Opera) request.getAttribute("quadro");
 		
 		if(titolo == null || titolo.equals("")) {
 			request.setAttribute("errTitolo", "Campo obbligatorio");
 			tuttoOk = false;
 		}
 		else 
-			quadro.setTitolo(titolo);
+			opera.setTitolo(titolo);
 		
 		if(descrizione == null || descrizione.equals("")) {
 			request.setAttribute("errDescrizione", "Campo obbligatorio");
 			tuttoOk = false;
 		}
 		else
-			quadro.setDescrizione(descrizione);
+			opera.setDescrizione(descrizione);
 		
 		if(prezzo == null || prezzo.equals("")) {
 			request.setAttribute("errPrezzo", "Campo obbligatorio");
@@ -39,7 +39,7 @@ public class ValidatorQuadro {
 		}
 		else {
 			try {
-				quadro.setPrezzo(Integer.parseInt(prezzo));
+				opera.setPrezzo(Integer.parseInt(prezzo));
 			}
 			catch (NumberFormatException e) {
 				request.setAttribute("errPrezzo", "Deve essere un numero!");
@@ -52,7 +52,7 @@ public class ValidatorQuadro {
 			tuttoOk = false;
 		}
 		else {
-			quadro.setAnnoRealizzazione(annoRealizzazione);
+			opera.setAnnoRealizzazione(annoRealizzazione);
 		
 		}
 		

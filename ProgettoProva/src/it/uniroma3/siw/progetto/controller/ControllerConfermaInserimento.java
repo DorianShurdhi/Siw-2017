@@ -1,7 +1,7 @@
 package it.uniroma3.siw.progetto.controller;
 
 
-import it.uniroma3.siw.progetto.model.Quadro;
+import it.uniroma3.siw.progetto.model.Opera;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -35,11 +35,11 @@ public class ControllerConfermaInserimento extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		/*
-		Perchè non c'è l'attributo quadro in sessione?? Viene messo da AzioneInserimentoQuadro
+		Perchè non c'è l'attributo opera in sessione?? Viene messo da AzioneInserimentoOpera
 		HttpSession sess = request.getSession();
-		Quadro q = (Quadro) sess.getAttribute("quadro");
+		Opera o = (Opera) sess.getAttribute("opera");
 		*/
-		AzioneInserimentoQuadro a = new AzioneInserimentoQuadro(request);
+		AzioneInserimentoOpera a = new AzioneInserimentoOpera(request);
 		String risultato = a.esegui();
 		String prossimaPagina = "/admin/erroreInserimento.jsp";
 		if(risultato.equals("Success")){

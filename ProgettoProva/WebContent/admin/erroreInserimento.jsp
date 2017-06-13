@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quadro non inserito</title>
+<title>Opera non inserita</title>
 </head>
 <body>
-<h1>Quadro non inserito</h1>
+<h1>Opera non inserita</h1>
 <p><a href="controllerLogout.do">Logout</a></p>
 </body>
 </html>

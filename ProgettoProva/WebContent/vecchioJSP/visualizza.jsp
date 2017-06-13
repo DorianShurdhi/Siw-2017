@@ -4,19 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Visualizzazione Quadri</title>
+<title>Visualizzazione Opere</title>
 </head>
 <body>
-<h1>Quadri</h1>
-	<% FacadeQuadro f = new FacadeQuadro();
-	ArrayList<Quadro> lista = f.tuttiQuadri(); 
-	Iterator<Quadro> i = lista.iterator();
+<h1>Opere</h1>
+	<% FacadeOpera f = new FacadeOpera();
+	ArrayList<Opera> lista = f.tutteOpere(); 
+	Iterator<Opera> i = lista.iterator();
 	while(i.hasNext()){
-		Quadro q = i.next();
-		q.toHTML();
+		Opera o = i.next();
+		o.toHTML();
 	}
 %>
-<p>In questo caso non ci saranno mai dei quadri in quanto non c'è una connessione con un database
+<p>In questo caso non ci saranno mai delle opere in quanto non c'è una connessione con un database
 e la facade viene creata al momento</p>
 </body>
 </html>

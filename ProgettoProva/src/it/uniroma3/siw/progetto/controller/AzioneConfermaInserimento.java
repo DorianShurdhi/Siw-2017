@@ -8,8 +8,8 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import it.uniroma3.siw.progetto.model.FacadeQuadro;
-import it.uniroma3.siw.progetto.model.Quadro;
+import it.uniroma3.siw.progetto.model.FacadeOpera;
+import it.uniroma3.siw.progetto.model.Opera;
 
 public class AzioneConfermaInserimento {
 	private HttpServletRequest request;
@@ -19,11 +19,11 @@ public class AzioneConfermaInserimento {
 	}
 	public String esegui() throws ParseException{
 		String risultato = "Fail";
-		FacadeQuadro f = new FacadeQuadro();
+		FacadeOpera f = new FacadeOpera();
 		
 		//HttpSession s = this.request.getSession();
-		//Quadro q = (Quadro) s.getAttribute("quadro");
-		//f.inserisciQuadro(s.getTitolo(), s.getDescrizione(), s.getPrezzo(), s.getAnnoRealizzazion());
+		//Opera o = (Opera) s.getAttribute("opera");
+		//f.inserisciOpera(s.getTitolo(), s.getDescrizione(), s.getPrezzo(), s.getAnnoRealizzazion());
 	
 		// WORKAROUND
 		String titolo = request.getParameter("titolo");
@@ -31,9 +31,9 @@ public class AzioneConfermaInserimento {
 		int prezzo = Integer.parseInt(request.getParameter("prezzo"));
 		String annoRealizzazione = request.getParameter("annoRealizzazione");
 	
-		Quadro q = f.inserisciQuadro(titolo, descrizione, prezzo,annoRealizzazione);
+		Opera o = f.inserisciOpera(titolo, descrizione, prezzo,annoRealizzazione);
 		//
-		if(f.tuttiQuadri().contains(q)){
+		if(f.tutteOpere().contains(o)){
 			risultato = "Success";
 		}
 		return risultato;

@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 
 @Entity 
-@NamedQuery(name = "findAllQuadri", query = "SELECT q FROM Quadro q")
-public class Quadro {
+@NamedQuery(name = "findAllOpere", query = "SELECT o FROM Opera o")
+public class Opera {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -29,7 +29,7 @@ public class Quadro {
 		this.annoRealizzazione = annoRealizzazione;
 	}
 
-	public Quadro(){
+	public Opera(){
 
 	}
 	public void setTitolo(String titolo) {
@@ -65,9 +65,9 @@ public class Quadro {
 		return r;
 	}
 
-	public boolean equals(Object o){
-		Quadro q = (Quadro) o;
-		return this.titolo.equals(q.getTitolo()) && this.descrizione.equals(q.getDescrizione()) && q.getPrezzo() == this.prezzo;
+	public boolean equals(Object ob){
+		Opera o = (Opera) ob;
+		return this.titolo.equals(o.getTitolo()) && this.descrizione.equals(o.getDescrizione()) && o.getPrezzo() == this.prezzo;
 
 
 	}

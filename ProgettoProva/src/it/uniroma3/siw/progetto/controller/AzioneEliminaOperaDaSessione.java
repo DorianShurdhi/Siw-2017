@@ -12,14 +12,14 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class ControllerEliminaQuadroDaSessione
  */
-@WebServlet("/admin/togliQuadro.do")
-public class AzioneEliminaQuadroDaSessione extends HttpServlet {
+@WebServlet("/admin/togliOpera.do")
+public class AzioneEliminaOperaDaSessione extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AzioneEliminaQuadroDaSessione() {
+    public AzioneEliminaOperaDaSessione() {
         super();
         // TODO Auto-generated constructor stub
     }

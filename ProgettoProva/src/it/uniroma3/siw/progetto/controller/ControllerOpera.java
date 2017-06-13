@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import it.uniroma3.siw.progetto.model.Quadro;
-import it.uniroma3.siw.progetto.service.QuadroService;
-import it.uniroma3.siw.progetto.validator.ValidatorQuadro;
+import it.uniroma3.siw.progetto.model.Opera;
+import it.uniroma3.siw.progetto.service.OperaService;
+import it.uniroma3.siw.progetto.validator.ValidatorOpera;
 
 /**
  * 
@@ -21,8 +21,8 @@ import it.uniroma3.siw.progetto.validator.ValidatorQuadro;
  *
  */
 
-@WebServlet("/quadro")
-public class ControllerQuadro extends HttpServlet{
+@WebServlet("/opera")
+public class ControllerOpera extends HttpServlet{
 
 	/**
 	 * 
@@ -32,19 +32,19 @@ public class ControllerQuadro extends HttpServlet{
 	public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nextPage;
 		if(!request.getParameter("command").equals("remove")){
-			Quadro quadro = new Quadro();
-			request.setAttribute("quadro", quadro);
-			ValidatorQuadro validator= new ValidatorQuadro();
+			Opera opera = new Opera();
+			request.setAttribute("opera", opera);
+			ValidatorOpera validator= new ValidatorOpera();
 			if(validator.validate(request)){
-				QuadroService service = new QuadroService();
-				service.inserisciQuadro(quadro);
-				nextPage="/quadro.jsp";
+				OperaService service = new OperaService();
+				service.inserisciOpera(opera);
+				nextPage="/opera.jsp";
 			}else{
 				nextPage="/index.jsp";
 			}
 		}else{
 
-			nextPage="/quadri.jsp";
+			nextPage="/opere.jsp";
 		}
 		ServletContext application  = getServletContext();
 		RequestDispatcher rd = application.getRequestDispatcher(nextPage);
@@ -54,17 +54,17 @@ public class ControllerQuadro extends HttpServlet{
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nextPage;
-		QuadroService service = new QuadroService();
+		OperaService service = new OperaService();
 
 		if(request.getParameter("id")!=null){                        //se nella richiesto ho l'id faccio questo
 			Long id= Long.parseLong(request.getParameter("id"));
-			Quadro one = service.getOneQuadro(id);
-			request.setAttribute("quadro", one);
-			nextPage="/quadro.jsp";
+			Opera one = service.getOneOpera(id);
+			request.setAttribute("opera", one);
+			nextPage="/opera.jsp";
 		}else{		
-			List<Quadro> quadri=service.getQuadri();
-			request.setAttribute("quadri",quadri);
-			nextPage="/quadri.jsp";			
+			List<Opera> opere=service.getOpere();
+			request.setAttribute("opere",opere);
+			nextPage="/opere.jsp";			
 		}		
 
 		ServletContext application  = getServletContext();
