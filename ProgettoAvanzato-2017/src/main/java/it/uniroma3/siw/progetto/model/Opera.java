@@ -26,7 +26,7 @@ public class Opera {
 	  private Date annoDiCreazione;
 	  private String tecnica;
 	  private String dimensioni;
-	  private String restauro;
+	  
  
 	  @OneToOne
 	  private Autore autore;
