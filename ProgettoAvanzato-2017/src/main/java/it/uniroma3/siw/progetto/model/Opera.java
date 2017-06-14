@@ -26,19 +26,27 @@ public class Opera {
 	  private Date annoDiCreazione;
 	  private String tecnica;
 	  private String dimensioni;
+	  private String restauro;
  
 	  @OneToOne
 	  private Autore autore;
 	  
 
-		public Opera(String titolo, Autore autore, Date anno, String tecnica, String dimensioni) {
+		public Opera(String titolo, Autore autore, Date anno, String tecnica, String dimensioni, String restauro) {
 			super();
 			this.titolo = titolo;
 			this.autore = autore;
 			this.annoDiCreazione = anno;
 			this.setTecnica(tecnica);
 			this.dimensioni = dimensioni;
+			this.restauro = restauro;
 			
+		}
+	public String getRestauro() {
+			return restauro;
+		}
+		public void setRestauro(String restauro) {
+			this.restauro = restauro;
 		}
 	public Long getId() {
 		return id;
