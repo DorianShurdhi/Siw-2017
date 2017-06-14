@@ -6,7 +6,7 @@
 	<groupId>it.uniroma3.siw.progetto</groupId>
 	<artifactId>ProgettoAvanzato-2017</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>ProgettoAvanzato-2017</name>
 	<description>Piccolo progetto di un MUSEO</description>
