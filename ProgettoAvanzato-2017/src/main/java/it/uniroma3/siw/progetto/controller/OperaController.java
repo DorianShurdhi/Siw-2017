@@ -43,7 +43,7 @@ public class OperaController {
         }
         return "OperazioniAdmin";
     }
-    
+    //UpdateOpera
     @PostMapping("/updateOpera")
     public String updateOpera(@Valid @ModelAttribute Opera opera, BindingResult bindingResult, Model model) {
     	
