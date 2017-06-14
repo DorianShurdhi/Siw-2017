@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import it.uniroma3.siw.modello.Autore;
-import it.uniroma3.siw.modello.Opera;
-import it.uniroma3.siw.service.AutoreService;
+import it.uniroma3.siw.progetto.model.Autore;
+import it.uniroma3.siw.progetto.model.Opera;
+import it.uniroma3.siw.progetto.service.AutoreService;
 
 @Controller
 public class AutoreController {

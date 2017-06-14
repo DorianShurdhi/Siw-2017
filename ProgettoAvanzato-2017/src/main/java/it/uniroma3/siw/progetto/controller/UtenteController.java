@@ -12,10 +12,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import it.uniroma3.siw.modello.Opera;
-import it.uniroma3.siw.modello.Utente;
-import it.uniroma3.siw.service.OperaService;
-import it.uniroma3.siw.service.UtenteService;
+import it.uniroma3.siw.progetto.model.Opera;
+import it.uniroma3.siw.progetto.model.Utente;
+import it.uniroma3.siw.progetto.service.OperaService;
+import it.uniroma3.siw.progetto.service.UtenteService;
 
 @Controller
 public class UtenteController {
