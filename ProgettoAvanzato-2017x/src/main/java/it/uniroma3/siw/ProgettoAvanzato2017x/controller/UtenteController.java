@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import it.uniroma3.siw.ProgettoAvanzato2017x.model.Opera;
 import it.uniroma3.siw.ProgettoAvanzato2017x.model.Utente;
 import it.uniroma3.siw.ProgettoAvanzato2017x.service.OperaService;
-import it.uniroma3.siw.ProgettoAvanzato2017xs.service.UtenteService;
+import it.uniroma3.siw.ProgettoAvanzato2017x.service.UtenteService;
 
 @Controller
 public class UtenteController {
