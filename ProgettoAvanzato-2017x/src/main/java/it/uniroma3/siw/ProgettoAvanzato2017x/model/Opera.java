@@ -5,11 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.Date;
+
 
 @Entity
 public class Opera {
@@ -22,8 +20,7 @@ public class Opera {
 	 @Size(min=1,message="il titolo dell'opera non pu� essere nulla")
 	 private String titolo;
 	 
-	  @Temporal (TemporalType.TIMESTAMP)
-	  private Date annoDiCreazione;
+	  private String annoDiCreazione;
 	  private String tecnica;
 	  private String dimensioni;
       private String restauro;
@@ -32,7 +29,7 @@ public class Opera {
 	  private Autore autore;
 	  
 
-		public Opera(String titolo, Autore autore, Date anno, String tecnica, String dimensioni, String restauro) {
+		public Opera(String titolo, Autore autore, String anno, String tecnica, String dimensioni, String restauro) {
 			super();
 			this.titolo = titolo;
 			this.autore = autore;
@@ -64,11 +61,11 @@ public class Opera {
 		this.titolo = titolo;
 	}
 
-	public Date getAnnoDiCreazione() {
+	public String getAnnoDiCreazione() {
 		return annoDiCreazione;
 	}
 
-	public void setAnnoDiCreazione(Date annoDiCreazione) {
+	public void setAnnoDiCreazione(String annoDiCreazione) {
 		this.annoDiCreazione = annoDiCreazione;
 	}
 
