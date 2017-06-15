@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>progetto</name>
-	<description>Progetto per làesame di siw Giugno 2017.</description>
+	<description>Progetto per l'esame di siw Giugno 2017.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -99,4 +99,5 @@
 		</plugins>
 	</build>
 
+	<packaging>war</packaging>
 </project>
