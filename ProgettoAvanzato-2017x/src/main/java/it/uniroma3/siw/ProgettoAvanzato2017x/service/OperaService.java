@@ -37,7 +37,7 @@ public class OperaService {
 	}
 
 	public Iterable<Opera> findByAnno(String anno){
-		return this.operaRepository.findByAnno(anno);
+		return this.operaRepository.findByannoDiCreazione(anno);
 	}
 
 	public Iterable<Opera> findByTecnica(String tecnica){
