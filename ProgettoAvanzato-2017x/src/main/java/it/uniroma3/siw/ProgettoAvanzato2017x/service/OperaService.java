@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import it.uniroma3.siw.ProgettoAvanzato2017x.model.Autore;
-import it.uniroma3.siw.ProgettoAvanzato2017x.Opera;
+import it.uniroma3.siw.ProgettoAvanzato2017x.model.Opera;
 import it.uniroma3.siw.ProgettoAvanzato2017x.repository.OperaRepository;
 
 @Service
