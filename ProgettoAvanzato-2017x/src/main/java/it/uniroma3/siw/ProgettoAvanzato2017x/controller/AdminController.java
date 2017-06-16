@@ -22,7 +22,7 @@ import it.uniroma3.siw.ProgettoAvanzato2017x.service.OperaService;
 @Controller
 public class AdminController {
 	@Autowired
-	AdminService adminService;
+	AdminService adminService;   //questo e un commento
 	@Autowired
 	OperaService operaService;
 	@Autowired
