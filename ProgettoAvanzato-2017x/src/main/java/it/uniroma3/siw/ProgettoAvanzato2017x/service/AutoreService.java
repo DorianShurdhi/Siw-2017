@@ -32,7 +32,7 @@ public class AutoreService {
 	}
 	
 	public Iterable<Autore> findByDataNascita(Date dataNascita){
-		return this.autoreRepository.findByDataDiNascita(dataNascita);
+		return this.autoreRepository.findByDataNascita(dataNascita);
 	}
 	
 	public Iterable<Autore> findByDataMorte(Date dataMorte){
