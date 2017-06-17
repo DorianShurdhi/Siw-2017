@@ -6,6 +6,7 @@
 	<groupId>it.uniroma3.siw</groupId>
 	<artifactId>ProgettoAvanzato2017x</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<name>progetto</name>
 	<description>Progetto per l'esame di siw Giugno 2017.</description>
@@ -99,5 +100,4 @@
 		</plugins>
 	</build>
 
-	<packaging>war</packaging>
 </project>
