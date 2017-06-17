@@ -50,9 +50,7 @@ public class OperaController {
         if (bindingResult.hasErrors()) {
             return "OperazioniAdmin";
         } else {
-        	//TODO SISTEMARE METODO 
-        
-
+        	
     			if(opera.getRestauro().equals("Si"))
     				opera.setRestauro("No");
     			else
