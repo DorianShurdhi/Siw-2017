@@ -15,29 +15,29 @@
     <!-- begin header -->
     <header><div id="logo"><h1>PHOTO<a href="#">GALLERY</a>Art</h1></div>
       <nav><ul class="sf-menu" id="nav">
-<li class="selected"><a href="index.html">home</a></li>
-          <li><a href="about.html">about me</a></li>
+<li><a href="index.html">home</a></li>
+          <li class="selected"><a href="about.html">about me</a></li>
           <li><a href="info.html">info</a></li>
-          
-          <li><a href="LoginAdmin.html">loginAdmin</a></li>
           <li><a href="LoginUtente.html">loginUtente</a></li>
+          <li><a href="LoginAdmin.html">loginUtente</a></li>
         </ul></nav></header><!-- end header --><!-- begin content --><div id="site_content">
-      <ul class="slideshow">
-<li class="show"><img width="950" height="450" src="images/home_1.jpg" alt="&quot;You can put a caption for your image right here&quot;"></li>
-        <li><img width="950" height="450" src="images/home_2.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;"></li>
-        <li><img width="950" height="450" src="images/home_3.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;"></li>
-      </ul>
+      <div id="left_content">
+        <h1>About This Project</h1>
+        <p>Questo è un semplice progetto svolto da Shurdhi Dorian e Subashi Bujar ai fini del esame di <strong>"siw Progetto giugno 2017"</strong>. Questa pagina è stata realizzata usando <strong>HTML5</strong> e <strong>CSS3</strong>.</p>
+      </div>
+      <div id="right_content">
+        <img style="float: left;" src="images/about.jpg" title="about me" alt="about me">
 </div>
+    </div>
     <!-- end content -->
 
     <!-- begin footer -->
-    <footer><p>Copyright &copy; 2017 PhotoGalleryArt. All Rights Reserved. <a href="http://www.dorianshurdhi.it">Design and photos from dorianshurdhi.it</a>
-</p>
+    <footer>
       <p><img src="images/twitter.png" alt="twitter">&nbsp;<img src="images/facebook.png" alt="facebook">&nbsp;<img src="images/rss.png" alt="rss"></p>
     </footer><!-- end footer -->
 </div>
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script><script type="text/javascript" src="js/jquery.easing-sooper.js"></script><script type="text/javascript" src="js/jquery.sooperfish.js"></script><script type="text/javascript" src="js/image_fade.js"></script><!-- initialize sooperfish menu --><script type="text/javascript">
+  <script type="text/javascript" src="js/jquery.min.js"></script><script type="text/javascript" src="js/jquery.easing-sooper.js"></script><script type="text/javascript" src="js/jquery.sooperfish.js"></script><!-- initialize sooperfish menu --><script type="text/javascript">
     $(document).ready(function() {
       $('ul.sf-menu').sooperfish();
     });
