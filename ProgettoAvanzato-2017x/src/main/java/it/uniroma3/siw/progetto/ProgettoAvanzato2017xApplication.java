@@ -1,4 +1,4 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x;
+package it.uniroma3.siw.progetto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x.controller;
+package it.uniroma3.siw.progetto.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

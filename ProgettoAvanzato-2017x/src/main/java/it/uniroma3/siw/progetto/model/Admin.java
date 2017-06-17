@@ -1,4 +1,4 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x.model;
+package it.uniroma3.siw.progetto.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,26 +7,26 @@ import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Utente {
-
+public class Admin {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	@Size(min=3)
 	private String username;
 	
 	@Size(min=3)
 	private String password;
 
-	public Utente(){
+	public Admin(){
 	}
 	
-	public Utente(Long id) {
+	public Admin(Long id) {
 		this.id = id;
 	}
 
-	public Utente(Long id, String username, String password) {
+	public Admin(Long id, String username, String password) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -51,6 +51,6 @@ public class Utente {
 
 	public void setPassword(String password) {
 		this.password = password;
-	} 
-	
+	}
+
 }

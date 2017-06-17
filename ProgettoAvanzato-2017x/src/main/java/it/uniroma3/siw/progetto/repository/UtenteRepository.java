@@ -1,8 +1,8 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x.repository;
+package it.uniroma3.siw.progetto.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import it.uniroma3.siw.ProgettoAvanzato2017x.model.Utente;
+import it.uniroma3.siw.progetto.model.Utente;
 
 public interface UtenteRepository extends CrudRepository<Utente, Long> {
 	  Utente findByUsername(String username);

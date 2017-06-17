@@ -1,11 +1,11 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x.repository;
+package it.uniroma3.siw.progetto.repository;
 
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import it.uniroma3.siw.ProgettoAvanzato2017x.model.Autore;
+import it.uniroma3.siw.progetto.model.Autore;
 
 public interface AutoreRepository extends CrudRepository<Autore, Long>{
 	

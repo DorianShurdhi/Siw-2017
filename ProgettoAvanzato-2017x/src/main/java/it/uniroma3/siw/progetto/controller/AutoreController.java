@@ -1,4 +1,4 @@
-package it.uniroma3.siw.ProgettoAvanzato2017x.controller;
+package it.uniroma3.siw.progetto.controller;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import it.uniroma3.siw.ProgettoAvanzato2017x.model.Autore;
-import it.uniroma3.siw.ProgettoAvanzato2017x.model.Opera;
-import it.uniroma3.siw.ProgettoAvanzato2017x.service.AutoreService;
+import it.uniroma3.siw.progetto.model.Autore;
+import it.uniroma3.siw.progetto.model.Opera;
+import it.uniroma3.siw.progetto.service.AutoreService;
 
 @Controller
 public class AutoreController {
