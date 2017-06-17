@@ -32,7 +32,7 @@ public class AdminController {
 	public String checkUtenteInfo(@Valid @ModelAttribute Admin admin, BindingResult bindingResult, Model model) {
 
 		if (bindingResult.hasErrors()) {
-			return "LoginAdmin"; //in caso di errore 
+			return "LoginAdmin"; 
 		} else {
 			if(adminService.findByUserName(admin.getUsername())==null) {
 				return "LoginAdmin";
@@ -47,7 +47,7 @@ public class AdminController {
 	public String insertNewAdmin(@Valid @ModelAttribute Admin admin, BindingResult bindingResult, Model model) {
 
 		if (bindingResult.hasErrors()) {
-			return "RegistrazioneAdmin"; //in caso di errore 
+			return "RegistrazioneAdmin";
 		} else {
 			model.addAttribute(admin);
 			adminService.add(admin); 

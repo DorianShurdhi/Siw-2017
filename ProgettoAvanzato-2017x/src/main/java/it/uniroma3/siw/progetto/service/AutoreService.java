@@ -24,7 +24,7 @@ public class AutoreService {
     }
 
 	public Iterable<Autore> findByCognome(String cognome) {
-		return this.autoreRepository.findByNazionalita(cognome);
+		return this.autoreRepository.findByCognome(cognome);
 	}
     
 	public Iterable<Autore> findByNazionalita(String nazionalita) {
