@@ -24,11 +24,12 @@ public class UtenteController {
 	@Autowired
 	OperaService operaService;
 
+	
 	@PostMapping("/utenteLogin")
 	public String checkUtenteInfo(@Valid @ModelAttribute Utente utente, BindingResult bindingResult, Model model) {
 
 		if (bindingResult.hasErrors()) {
-			return "Error"; //in caso di errore 
+			return "Error"; 
 		}else{
 			if(utenteService.findByUserName(utente.getUsername())==null){
 				return "LoginUtente";
@@ -43,7 +44,7 @@ public class UtenteController {
 	public String insertNewUtente(@Valid @ModelAttribute Utente utente, BindingResult bindingResult, Model model) {
 
 		if (bindingResult.hasErrors()) {
-			return "Error"; //in caso di errore 
+			return "Error"; 
 		} else {
 			model.addAttribute(utente);
 			utenteService.add(utente); 

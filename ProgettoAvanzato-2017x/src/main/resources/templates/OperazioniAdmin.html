@@ -45,11 +45,11 @@
 							</div>
 							<div>
 								<span>Data di Nascita: <input type="date"
-									id="dataNascita" name="data_nascita" /></span>
+									id="dataDiNascita" name="data_di_nascita" /></span>
 							</div>
 							<div>
-								<span>Data di Morte: <input type="date" id="dataMorte"
-									name="data_morte" /></span>
+								<span>Data della Morte: <input type="date" id="dataDellaMorte"
+									name="data_della_morte" /></span>
 							</div>
 							<button type="submit">Submit</button>
 						</div>
@@ -141,8 +141,8 @@
 							<ul>
 								<li><a th:text="${opera.autore.cognome}"></a></li>
 								<li><a th:text="${opera.autore.nazionalita}"></a></li>
-								<li><a th:text="${opera.autore.dataNascita}"></a></li>
-								<li><a th:text="${opera.autore.dataMorte}"></a></li>
+								<li><a th:text="${opera.autore.dataDiNascita}"></a></li>
+								<li><a th:text="${opera.autore.dataDellaMorte}"></a></li>
 							</ul></li>
 					</ul>
 				</td>

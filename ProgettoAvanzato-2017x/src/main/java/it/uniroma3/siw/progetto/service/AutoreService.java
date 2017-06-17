@@ -24,19 +24,19 @@ public class AutoreService {
     }
 
 	public Iterable<Autore> findByCognome(String cognome) {
-		return this.autoreRepository.findByNazionalita(cognome);
+		return this.autoreRepository.findByCognome(cognome);
 	}
     
 	public Iterable<Autore> findByNazionalita(String nazionalita) {
 		return this.autoreRepository.findByNazionalita(nazionalita);
 	}
 	
-	public Iterable<Autore> findByDataNascita(Date dataNascita){
-		return this.autoreRepository.findByDataDiNascita(dataNascita);
+	public Iterable<Autore> findByDataNascita(Date dataDiNascita){
+		return this.autoreRepository.findByDataDiNascita(dataDiNascita);
 	}
 	
-	public Iterable<Autore> findByDataMorte(Date dataMorte){
-		return this.autoreRepository.findByDataMorte(dataMorte);
+	public Iterable<Autore> findByDataMorte(Date dataDellaMorte){
+		return this.autoreRepository.findByDataMorte(dataDellaMorte);
 	}
 	
 }

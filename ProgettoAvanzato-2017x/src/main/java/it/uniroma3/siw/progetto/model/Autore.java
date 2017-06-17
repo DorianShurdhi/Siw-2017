@@ -21,16 +21,16 @@ public class Autore {
     @Temporal(TemporalType.DATE)
     private Date DataDiNascita;
     @Temporal(TemporalType.DATE)
-    private Date DataMorte;
+    private Date DataDellaMorte;
 
 
-public Autore(String nome, String cognome, String nazionalita, Date dataNascita, Date dataMorte) {
+public Autore(String nome, String cognome, String nazionalita, Date dataDiNascita, Date dataDellaMorte) {
 	super();
 	this.Nome = nome;
 	this.Cognome = cognome;
 	this.Nazionalita = nazionalita;
-	this.DataDiNascita = dataNascita;
-	this.DataMorte = dataMorte;
+	this.DataDiNascita = dataDiNascita;
+	this.DataDellaMorte = dataDellaMorte;
 }
 
 
@@ -74,13 +74,13 @@ public void setDataDiNascita(Date dataDiNascita) {
 }
 
 
-public Date getDataMorte() {
-	return DataMorte;
+public Date getDataDellaMorte() {
+	return DataDellaMorte;
 }
 
 
 public void setDataMorte(Date dataMorte) {
-	DataMorte = dataMorte;
+	DataDellaMorte = dataMorte;
 }
 
 
