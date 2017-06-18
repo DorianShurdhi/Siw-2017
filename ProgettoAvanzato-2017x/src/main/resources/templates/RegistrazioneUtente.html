@@ -3,10 +3,19 @@
 <head>
 <meta charset="ISO-8859-1"/>
 <title>Registrazione Utente</title>
-<link rel="stylesheet" href="/styles/main.css" />
+<meta name="description" content="website description">
+<meta name="keywords" content="website keywords, website keywords">
+<link rel="stylesheet" href="/styles/main.css"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- stylesheets --><link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/dark.css" rel="stylesheet" type="text/css">
+<!-- modernizr enables HTML5 elements and feature detects --><script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 </head>
 <body>
-	<h1>Registrazione</h1>
+  <div id="main">
+
+    <!-- begin header -->
+    <header><div id="logo"><h1>PHOTO<a href="#">GALLERY</a>RegistrazioneAdmin</h1></div>
 	<form action="#" th:action="@{/utenteReg}" th:object="${utente}" method="post">
 		<div>
 			<div>
@@ -19,6 +28,12 @@
 				<span><button type="submit">Submit</button></span>
 			</div>
 		</div>
-	</form>
+		
+	</form></header> <ul class="slideshow">
+<li class="show"><img width="950" height="400" src="images/home_1.jpg" alt="&quot;You can put a caption for your image right here&quot;"></li>
+        <li><img width="950" height="450" src="images/home_2.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;"></li>
+        <li><img width="950" height="450" src="images/home_3.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;"></li>
+      </ul>
+</div>
 </body>
 </html>

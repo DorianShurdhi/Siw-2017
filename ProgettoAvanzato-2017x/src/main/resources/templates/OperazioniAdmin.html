@@ -11,8 +11,8 @@
 		<form id="f" th:action="@{/reload}" method="post">
 			<ul class="menu">
 				<li class="primo"><a href="index.html">Home</a></li>
-				<li onclick="f.submit();">Ricarica</li>
-				<li class="ultimo">Contatti</li>
+				<li><a href="about.html">about me</a></li>
+                <li><a href="info.html">info</a></li>
 			</ul>
 		</form>
 	</div>
@@ -24,6 +24,7 @@
 		<tr>
 			<th><h2>Inserisci Autore:</h2></th>
 			<th><h2>Inserisci Opera:</h2></th>
+			<th><h2>Elimina Opera:</h2></th>
 		</tr>
 
 		<tr>
@@ -94,14 +95,11 @@
 					</form>
 				</div>
 			</th>
-		</tr>
+		
 
-		<tr>
-			<th><h2>Elimina Opera:</h2></th>
-			<th><h2>Aggiorna Opera:</h2></th>
-		</tr>
+		
 
-		<tr>
+	
 			<th class="transparent">
 				<div>
 					<form name="a" th:action="@{/removeOpera}" th:object="${opera}"
@@ -114,8 +112,6 @@
 						<button type="submit">Submit</button>
 					</form>
 				</div>
-			</th>
-			<th class="transparent">Da implementare</th>
 		</tr>
 
 	</table>
