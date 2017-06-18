@@ -22,7 +22,6 @@ public class Opera {
 	private String anno;
 	private String tecnica;
 	private String dimensioni;
-	private String restauro;
 	
 	public Opera() {
 	}
@@ -34,7 +33,6 @@ public class Opera {
 		this.anno = anno;
 		this.tecnica = tecnica;
 		this.dimensioni = dimensioni;
-		this.restauro = restauro;
 	}
 
 	public Long getId() {
@@ -85,12 +83,4 @@ public class Opera {
 		this.dimensioni = dimensioni;
 	}
 
-	public String getRestauro() {
-		return restauro;
-	}
-
-	public void setRestauro(String restauro) {
-		this.restauro = restauro;
-	}
-	
 }

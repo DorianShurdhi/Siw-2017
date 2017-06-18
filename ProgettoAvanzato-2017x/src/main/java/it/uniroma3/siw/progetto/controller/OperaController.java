@@ -44,22 +44,6 @@ public class OperaController {
         return "OperazioniAdmin";
     }
     
-    @PostMapping("/updateOpera")
-    public String updateOpera(@Valid @ModelAttribute Opera opera, BindingResult bindingResult, Model model) {
-    	
-        if (bindingResult.hasErrors()) {
-            return "OperazioniAdmin";
-        } else {
-        	
-    			if(opera.getRestauro().equals("Si"))
-    				opera.setRestauro("No");
-    			else
-    				opera.setRestauro("Si");
-    			this.operaService.add(opera);
-    		model.addAttribute("opere", opere());
-        }
-        return "OperazioniAdmin";
-    }
     
     @PostMapping("/removeOpera")
     public String operaRemove(@Valid @ModelAttribute Opera opera, BindingResult bindingResult, Model model) {

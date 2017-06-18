@@ -13,5 +13,5 @@ public interface OperaRepository extends CrudRepository<Opera, Long>{
 	List<Opera> findByAutore(Autore autore);
 	List<Opera> findByAnno(String anno);
 	List<Opera> findByTecnica(String tecnica);
-	List<Opera> findByRestauro(String restauro);
+
 }

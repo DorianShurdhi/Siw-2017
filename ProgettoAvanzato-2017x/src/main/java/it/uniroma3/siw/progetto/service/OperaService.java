@@ -44,10 +44,6 @@ public class OperaService {
 		return this.operaRepository.findByTecnica(tecnica);
 	}
 
-	public Iterable<Opera> findByRestauro(String restauro){
-		return this.operaRepository.findByRestauro(restauro);
-	}
-	
 	public void update(Opera opera){
 		 this.operaRepository.save(opera);
 	}
