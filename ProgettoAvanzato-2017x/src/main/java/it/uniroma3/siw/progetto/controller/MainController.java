@@ -9,8 +9,8 @@ public class MainController {
 
 	// Login form
 
-	@RequestMapping("/index.html")
+	@RequestMapping("/")
 	public String VisitHomepage() {
-		return "index";
+		return "home";
 	}
 }
