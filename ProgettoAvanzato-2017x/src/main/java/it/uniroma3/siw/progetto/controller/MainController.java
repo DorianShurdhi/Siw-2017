@@ -11,6 +11,6 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String VisitHomepage() {
-		return "home";
+		return "index";
 	}
 }
