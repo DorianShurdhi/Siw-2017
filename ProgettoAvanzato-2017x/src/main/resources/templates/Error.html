@@ -2,9 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
     <!-- begin header -->
-    
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Login Erorr</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section class="container">
+    	<div class="login">
+			<h1>Login error</h1>
 	<form action="#" th:action="@{/utenteLogin}" th:object="${utente}" method="post">
-		<div>
+		
 			<div>
 				<span th:text="#{label.username}">username: </span>
 				<span><input type="text" th:field="*{username}" /></span>
@@ -18,7 +27,11 @@
 			<div>
 				<span><button type="submit">Submit</button></span>
 			</div>
+		</form>
 		</div>
-	</form>
+		</section>
+	<div class="home-help">
+    <p>Click sul link per tornare alla pagina iniziale <a href="index.html">Ritorna alla Hompage</a>.</p>
+    </div>
 </body>
 </html>
