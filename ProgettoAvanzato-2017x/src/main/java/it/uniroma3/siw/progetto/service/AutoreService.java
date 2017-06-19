@@ -31,12 +31,12 @@ public class AutoreService {
 		return this.autoreRepository.findByNazionalita(nazionalita);
 	}
 	
-	public Iterable<Autore> findByDataNascita(Date dataDiNascita){
+	public Iterable<Autore> findByDataDiNascita(Date dataDiNascita){
 		return this.autoreRepository.findByDataDiNascita(dataDiNascita);
 	}
 	
-	public Iterable<Autore> findByDataMorte(Date dataDellaMorte){
-		return this.autoreRepository.findByDataMorte(dataDellaMorte);
+	public Iterable<Autore> findByDataDellaMorte(Date dataDellaMorte){
+		return this.autoreRepository.findByDataDellaMorte(dataDellaMorte);
 	}
 	
 }

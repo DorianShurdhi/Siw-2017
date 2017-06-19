@@ -13,5 +13,5 @@ public interface AutoreRepository extends CrudRepository<Autore, Long>{
 	  List<Autore> findByCognome(String cognome);
 	  List<Autore> findByNazionalita(String nazionalita);
 	  List<Autore> findByDataDiNascita(Date dataDiNascita);
-	  List<Autore> findByDataMorte(Date dataDellaMorte);
+	  List<Autore> findByDataDellaMorte(Date dataDellaMorte);
 }
