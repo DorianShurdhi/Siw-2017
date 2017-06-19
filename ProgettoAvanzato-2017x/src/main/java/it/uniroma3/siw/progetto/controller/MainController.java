@@ -9,7 +9,7 @@ public class MainController {
 
 	// Login form
 
-	@RequestMapping("/")
+	@RequestMapping("/index.html")
 	public String VisitHomepage() {
 		return "index";
 	}
