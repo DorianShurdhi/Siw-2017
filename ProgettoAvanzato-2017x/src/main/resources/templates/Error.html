@@ -15,7 +15,7 @@
 	<form action="#" th:action="@{/utenteLogin}" th:object="${utente}" method="post">
 		
 			<div>
-				<span th:text="#{label.username}">username: </span>
+				<span th:text="#{label.username}">Username: </span>
 				<span><input type="text" th:field="*{username}" /></span>
 				<span th:if="${#fields.hasErrors('username')}" th:text="#{label.mandatory}">Error</span>
 			</div>

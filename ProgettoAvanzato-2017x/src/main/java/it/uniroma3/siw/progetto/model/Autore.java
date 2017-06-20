@@ -15,72 +15,72 @@ public class Autore {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-	private String Nome;
-    private String Cognome;
-    private String Nazionalita;
+	private String nome;
+    private String cognome;
+    private String nazionalita;
     @Temporal(TemporalType.DATE)
-    private Date DataDiNascita;
+    private Date dataDiNascita;
     @Temporal(TemporalType.DATE)
-    private Date DataDellaMorte;
+    private Date dataDellaMorte;
 
 
 public Autore(String nome, String cognome, String nazionalita, Date dataDiNascita, Date dataDellaMorte) {
 	super();
-	this.Nome = nome;
-	this.Cognome = cognome;
-	this.Nazionalita = nazionalita;
-	this.DataDiNascita = dataDiNascita;
-	this.DataDellaMorte = dataDellaMorte;
+	this.nome = nome;
+	this.cognome = cognome;
+	this.nazionalita = nazionalita;
+	this.dataDiNascita = dataDiNascita;
+	this.dataDellaMorte = dataDellaMorte;
 }
 
 
 public String getNome() {
-	return Nome;
+	return nome;
 }
 
 
 public void setNome(String nome) {
-	Nome = nome;
+	this.nome = nome;
 }
 
 
 public String getCognome() {
-	return Cognome;
+	return cognome;
 }
 
 
 public void setCognome(String cognome) {
-	Cognome = cognome;
+	this.cognome = cognome;
 }
 
 
 public String getNazionalita() {
-	return Nazionalita;
+	return nazionalita;
 }
 
 
 public void setNazionalita(String nazionalita) {
-	Nazionalita = nazionalita;
+	this.nazionalita = nazionalita;
 }
 
 
 public Date getDataDiNascita() {
-	return DataDiNascita;
+	return dataDiNascita;
 }
 
 
 public void setDataDiNascita(Date dataDiNascita) {
-	DataDiNascita = dataDiNascita;
+	this.dataDiNascita = dataDiNascita;
 }
 
 
 public Date getDataDellaMorte() {
-	return DataDellaMorte;
+	return dataDellaMorte;
 }
 
 
 public void setDataMorte(Date dataMorte) {
-	DataDellaMorte = dataMorte;
+	dataDellaMorte = dataMorte;
 }
 
 
